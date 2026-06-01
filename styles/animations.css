@@ -132,7 +132,7 @@
 /* Modal Font Style Fixes */
 .modal-wrapper,
 .modal-wrapper * {
-  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-family: 'Satoshi', sans-serif !important;
 }
 
 /* Prevent image dragging and selection on avatar */
