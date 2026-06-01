@@ -132,7 +132,7 @@
 /* Modal Font Style Fixes */
 .modal-wrapper,
 .modal-wrapper * {
-  font-family: 'Clash', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* Prevent image dragging and selection on avatar */
