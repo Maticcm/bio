@@ -1,0 +1,130 @@
+/* ========================================
+   Custom Entrance & Hover Animations
+   ======================================== */
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleInPop {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes iconEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.6) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Staggered Load Animations */
+.profile-image-wrapper {
+  opacity: 0;
+  animation: scaleInPop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+.profile-name-wrapper {
+  opacity: 0;
+  animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+.profile-location-box {
+  opacity: 0;
+  animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.25s;
+}
+
+.profile-bio {
+  opacity: 0;
+  animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+.contact-button {
+  opacity: 0;
+  animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.contact-button:nth-child(1) { animation-delay: 0.35s; }
+.contact-button:nth-child(2) { animation-delay: 0.4s; }
+
+.minimal-button {
+  opacity: 0;
+  animation: iconEntrance 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+.minimal-button:nth-child(1) { animation-delay: 0.45s; }
+.minimal-button:nth-child(2) { animation-delay: 0.5s; }
+.minimal-button:nth-child(3) { animation-delay: 0.55s; }
+.minimal-button:nth-child(4) { animation-delay: 0.6s; }
+.minimal-button:nth-child(5) { animation-delay: 0.65s; }
+
+.link-item-wrapper {
+  opacity: 0;
+  animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.7s;
+}
+
+/* Enhanced Hover & Active States */
+.contact-button {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+.contact-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(81, 54, 245, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.minimal-button {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+.minimal-button:hover {
+  transform: translateY(-4px) scale(1.12);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(81, 54, 245, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.link-button {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+.link-button:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 15px rgba(81, 54, 245, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.link-button:hover .link-arrows {
+  transform: translateX(4px) !important;
+}
+
+.link-button:hover .link-icon-float {
+  transform: scale(1.08) rotate(-4deg) !important;
+}
+
+.page-share {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+.page-share:hover {
+  transform: scale(1.08) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
