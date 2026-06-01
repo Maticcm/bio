@@ -132,5 +132,14 @@
 /* Modal Font Style Fixes */
 .modal-wrapper,
 .modal-wrapper * {
-  font-family: 'Chillax', sans-serif !important;
+  font-family: 'Clash', sans-serif !important;
+}
+
+/* Prevent image dragging and selection on avatar */
+.profile-image {
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
 }
