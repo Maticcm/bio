@@ -143,3 +143,8 @@
   -moz-user-select: none !important;
   -ms-user-select: none !important;
 }
+
+/* Ensure links are the same horizontal size as the main profile block */
+.link-button {
+  width: 100% !important;
+}
