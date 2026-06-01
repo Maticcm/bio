@@ -144,7 +144,13 @@
   -ms-user-select: none !important;
 }
 
-/* Ensure links are the same horizontal size as the main profile block */
+/* Ensure links are the same horizontal size as the main profile block, and adjust padding for the inset icon */
 .link-button {
   width: 100% !important;
+  padding-left: 92px !important;
+}
+
+/* Position link float icon completely inside the link button */
+.link-icon-float {
+  left: 12px !important;
 }
