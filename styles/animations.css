@@ -147,10 +147,16 @@
 /* Ensure links are the same horizontal size as the main profile block, and adjust padding for the inset icon */
 .link-button {
   width: 100% !important;
-  padding-left: 92px !important;
+  padding-left: 100px !important;
 }
 
-/* Position link float icon completely inside the link button */
+/* Position link float icon completely inside the link button and ensure its shadow is dark (not purple) */
 .link-icon-float {
-  left: 12px !important;
+  left: 20px !important;
+  box-shadow: 0 8px 14px -4px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Ensure no purple shadow on the icon when link-button is hovered */
+.link-button:hover .link-icon-float {
+  box-shadow: 0 10px 18px -4px rgba(0, 0, 0, 0.5) !important;
 }
