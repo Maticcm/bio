@@ -89,7 +89,7 @@
 }
 .contact-button:hover {
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(81, 54, 245, 0.15) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
   background-color: rgba(255, 255, 255, 0.08) !important;
 }
@@ -99,7 +99,7 @@
 }
 .minimal-button:hover {
   transform: translateY(-4px) scale(1.12);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(81, 54, 245, 0.25) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
   background-color: rgba(255, 255, 255, 0.08) !important;
 }
 
@@ -108,7 +108,7 @@
 }
 .link-button:hover {
   transform: translateY(-5px) !important;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 15px rgba(81, 54, 245, 0.2) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35) !important;
   background-color: rgba(255, 255, 255, 0.06) !important;
   border-color: rgba(255, 255, 255, 0.12) !important;
 }
